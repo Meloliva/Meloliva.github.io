@@ -916,3 +916,169 @@ h1 {
     height: auto;
     margin-left: 80px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ultimos-articulos,
+.ultimos-posts,
+.contacto {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.icono {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.slider-image {
+    width: 80%;
+    max-width: 250px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #147B2A;
+    border: 2px solid #147B2A;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.nav-btn:hover {
+    background-color: #9CB343;
+    color: #fff;
+    border-color: #9CB343;
+}
+
+.post-image {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.contacto-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.llamanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.telefono-icono {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.llamanos p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #147B2A;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.formulario h3 {
+    background-color: #80CD29;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.llamanos a {
+    text-decoration: none;
+    color: #147B2A;
+}
+
+.llamanos a:hover {
+    color: #80CD29;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #147B2A;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #80CD29;
+}
