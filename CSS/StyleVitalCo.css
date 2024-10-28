@@ -6,12 +6,15 @@ body {
     text-align: center;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #333;
     margin-bottom: 15px;
 }
 
-.ultimos-articulos, .ultimos-posts, .contacto {
+.ultimos-articulos,
+.ultimos-posts,
+.contacto {
     max-width: 600px;
     margin: 30px auto;
 }
@@ -117,7 +120,8 @@ h2, h3 {
     padding: 10px 0;
 }
 
-.input-group input, .input-group textarea {
+.input-group input,
+.input-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
