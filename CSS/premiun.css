@@ -1,24 +1,122 @@
+.header {
+    background: white;
+    color: black;
+    padding: 0rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid gray;
+    /* Línea ploma */
+    z-index: 10;
+    height: 120px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    color: #147B2A;
+}
+
+/* Cuadro verde para "Regístrate ahora" */
+.navigation ul li a.register-btn {
+    background-color: #147B2A;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.navigation ul li a.register-btn:hover {
+    background-color: #147B2A;
+    color: black;
+}
+
+.register-btn {
+    background-color: #147B2A;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Elimina el subrayado */
+    display: inline-block;
+    /* Hace que el enlace se comporte como un botón */
+    margin-top: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #147B2A;
+    color: black;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+    mix-blend-mode: multiply;
+    /* Elimina el fondo blanco en algunos casos */
+}
+
+.logo-nav-container img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden;
 }
-.todojunto{
+
+.todojunto {
     flex-direction: column;
 }
+
 .parte-1-premium {
     display: flex;
     justify-content: center;
-    position: relative; 
-    top: 100px; 
+    position: relative;
+    top: 100px;
 }
 
 .text-container {
-    position: relative; 
-    top: 150px; 
+    position: relative;
+    top: 150px;
     font-family: 'Poppins';
     text-align: center;
 }
@@ -39,21 +137,21 @@ body {
 }
 
 .image-container {
-    position: relative; 
-    top: 100px; 
+    position: relative;
+    top: 100px;
 }
 
 .image-container img {
     width: 360px;
-    left: 100px; 
+    left: 100px;
 }
 
 .pricing-container {
     font-family: 'Open Sans', sans-serif;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
     position: relative;
     top: 300px;
     left: 22px;
@@ -66,13 +164,13 @@ body {
 }
 
 .pricing-container img {
-    width: 110px; 
+    width: 110px;
 }
 
-.plans{
+.plans {
     display: flex;
     position: relative;
-    top:400px;
+    top: 400px;
     left: 590px;
     justify-content: space-around;
     width: 100%;
@@ -98,11 +196,11 @@ body {
 }
 
 .plan.simple {
-    background-color: #D9D9D9; 
+    background-color: #D9D9D9;
 }
 
 .plan.premium {
-    background-color: #fff9c4; 
+    background-color: #fff9c4;
 }
 
 .plan .price {
@@ -114,13 +212,13 @@ body {
 }
 
 .price.gratis {
-    background-color: #858585; 
+    background-color: #858585;
     color: #000;
     font-weight: 700;
 }
 
 .price.premium {
-    background-color: #b2f9c4; 
+    background-color: #b2f9c4;
     color: #000;
     font-weight: 700;
 }
@@ -136,19 +234,19 @@ body {
     width: 80%;
     max-width: 900px;
     text-align: center;
-  
- 
+
+
 }
 
 .premium-features h2 {
     font-size: 28px;
-    font-weight:  bold;
+    font-weight: bold;
     font-family: 'open sans';
     color: #000;
     position: relative;
-    top:500px;
+    top: 500px;
     left: 550px;
-   
+
 }
 
 .feature {
@@ -156,7 +254,7 @@ body {
     align-items: center;
     margin-bottom: 30px;
     text-align: left;
-    
+
 }
 
 .icon {
@@ -176,10 +274,10 @@ body {
 .text {
     flex: 1;
     position: relative;
-    left:750px;
-    top:570px;
-    
-  
+    left: 750px;
+    top: 570px;
+
+
 }
 
 .text h3 {
@@ -194,5 +292,5 @@ body {
     font-size: 16px;
     color: #000;
     line-height: 1.4;
-    font-family: 'open sans' ;
+    font-family: 'open sans';
 }
