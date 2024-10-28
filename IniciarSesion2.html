@@ -33,83 +33,94 @@
             <label for="nombre" class="parrafo">¿Cúal es tu nombre?</label>
             <br>
             <br>
-            <input type="text" name="nombre" id="nombre">
+            <section>
+                <input type="text" name="nombre" id="nombre">
+            </section>
             <br>
             <br>
-            <label for="correo" class="parrafo">Ingrese su correo</label>
+            <section>
+                <label for="correo" class="parrafo">Ingrese su correo</label>
+            </section>
             <br>
             <br>
-            <input type="email" name="correo" id="correo">
+            <section>
+                <input type="email" name="correo" id="correo">
+            </section>
             <br>
             <br>
-            <label for="contraseña" class="parrafo">Crea tu contraseña</label>
+            <section>
+                <label for="contraseña" class="parrafo">Crea tu contraseña</label>
+            </section>
             <br>
             <br>
-            <input type="password" name="contraseña" id="contraseña">
+            <section>
+                <input type="password" name="contraseña" id="contraseña">
+            </section>
             <br>
             <br>
             <br>
             <br>
-            <input type="submit" class="button" value="Crear cuenta">
+            <section>
+                <input type="submit" class="button" value="Crear cuenta">
+            </section>
         </form>
-    </section>
 
-    <script>
-        // Seleccionar el formulario y los campos
-        const form = document.getElementById("miFormulario");
-        const nombre = document.querySelector("input[name='nombre']");
-        const correo = document.querySelector("input[name='correo']");
-        const contraseña = document.querySelector("input[name='contraseña']");
+        <script>
+            // Seleccionar el formulario y los campos
+            const form = document.getElementById("miFormulario");
+            const nombre = document.querySelector("input[name='nombre']");
+            const correo = document.querySelector("input[name='correo']");
+            const contraseña = document.querySelector("input[name='contraseña']");
 
-        // Validación del formulario al enviar
-        form.addEventListener("submit", function (event) {
-            // Limpiar mensajes previos
-            clearErrors();
+            // Validación del formulario al enviar
+            form.addEventListener("submit", function (event) {
+                // Limpiar mensajes previos
+                clearErrors();
 
-            let valid = true;
+                let valid = true;
 
-            // Validación del nombre
-            if (nombre.value.trim() === "") {
-                showError(nombre, "El nombre es obligatorio.");
-                valid = false;
+                // Validación del nombre
+                if (nombre.value.trim() === "") {
+                    showError(nombre, "El nombre es obligatorio.");
+                    valid = false;
+                }
+
+                // Validación del correo
+                const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                if (!emailPattern.test(correo.value.trim())) {
+                    showError(correo, "Por favor ingrese un correo válido.");
+                    valid = false;
+                }
+
+                // Validación de la contraseña
+                if (contraseña.value.trim().length < 6) {
+                    showError(contraseña, "La contraseña debe tener al menos 6 caracteres.");
+                    valid = false;
+                }
+
+                // Evitar el envío si hay errores
+                if (!valid) {
+                    event.preventDefault();
+                } else {
+                    // Acción al enviar el formulario
+                    alert("Formulario enviado con éxito");
+                }
+            });
+
+            // Función para mostrar mensajes de error
+            function showError(input, message) {
+                const error = document.createElement("p");
+                error.className = "error-message";
+                error.innerText = message;
+                input.parentNode.insertBefore(error, input.nextSibling);
             }
 
-            // Validación del correo
-            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-            if (!emailPattern.test(correo.value.trim())) {
-                showError(correo, "Por favor ingrese un correo válido.");
-                valid = false;
+            // Función para limpiar los mensajes de error
+            function clearErrors() {
+                const errors = document.querySelectorAll(".error-message");
+                errors.forEach(error => error.remove());
             }
-
-            // Validación de la contraseña
-            if (contraseña.value.trim().length < 6) {
-                showError(contraseña, "La contraseña debe tener al menos 6 caracteres.");
-                valid = false;
-            }
-
-            // Evitar el envío si hay errores
-            if (!valid) {
-                event.preventDefault();
-            } else {
-                // Acción al enviar el formulario
-                alert("Formulario enviado con éxito");
-            }
-        });
-
-        // Función para mostrar mensajes de error
-        function showError(input, message) {
-            const error = document.createElement("p");
-            error.className = "error-message";
-            error.innerText = message;
-            input.parentNode.insertBefore(error, input.nextSibling);
-        }
-
-        // Función para limpiar los mensajes de error
-        function clearErrors() {
-            const errors = document.querySelectorAll(".error-message");
-            errors.forEach(error => error.remove());
-        }
-    </script>
+        </script>
 </body>
 
 </html>
