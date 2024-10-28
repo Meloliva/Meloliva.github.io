@@ -68,14 +68,14 @@
         <script>
             // Seleccionar el formulario y los campos
             const form = document.getElementById("miFormulario");
-            const nombre = document.querySelector("input[name='nombre']");
-            const correo = document.querySelector("input[name='correo']");
-            const contraseña = document.querySelector("input[name='contraseña']");
+            const nombre = document.getElementById("nombre");
+            const correo = document.getElementById("correo");
+            const contraseña = document.getElementById("contraseña");
 
             // Validación del formulario al enviar
             form.addEventListener("submit", function (event) {
-                // Limpiar mensajes previos
-                clearErrors();
+                event.preventDefault(); // Evita el envío automático para que podamos validar
+                clearErrors(); // Limpiar mensajes previos
 
                 let valid = true;
 
@@ -98,12 +98,10 @@
                     valid = false;
                 }
 
-                // Evitar el envío si hay errores
-                if (!valid) {
-                    event.preventDefault();
-                } else {
-                    // Acción al enviar el formulario
+                // Si la validación es exitosa, redirige a la página principal
+                if (valid) {
                     alert("Formulario enviado con éxito");
+                    window.location.href = "index.html"; // Cambia "index.html" por la ruta de tu página principal
                 }
             });
 
