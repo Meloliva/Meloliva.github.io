@@ -1,3 +1,98 @@
+.header {
+    background: white;
+    color: black;
+    padding: 0rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid gray;
+    /* Línea ploma */
+    z-index: 10;
+    height: 120px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    color: #147B2A;
+}
+
+/* Cuadro verde para "Regístrate ahora" */
+.navigation ul li a.register-btn {
+    background-color: #147B2A;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.navigation ul li a.register-btn:hover {
+    background-color: #147B2A;
+    color: black;
+}
+
+.register-btn {
+    background-color: #147B2A;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Elimina el subrayado */
+    display: inline-block;
+    /* Hace que el enlace se comporte como un botón */
+    margin-top: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #147B2A;
+    color: black;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+    mix-blend-mode: multiply;
+    /* Elimina el fondo blanco en algunos casos */
+}
+
+.logo-nav-container img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -6,12 +101,15 @@ body {
     text-align: center;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #333;
     margin-bottom: 15px;
 }
 
-.ultimos-articulos, .ultimos-posts, .contacto {
+.ultimos-articulos,
+.ultimos-posts,
+.contacto {
     max-width: 600px;
     margin: 30px auto;
 }
@@ -117,7 +215,8 @@ h2, h3 {
     padding: 10px 0;
 }
 
-.input-group input, .input-group textarea {
+.input-group input,
+.input-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
