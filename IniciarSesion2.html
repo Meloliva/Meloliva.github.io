@@ -28,7 +28,7 @@
     <br>
     <br>
     <br>
-    <form action="IncioSesion2.html" method="post" class="formulario">
+    <form action="IncioSesion2.html" method="post" class="formulario" id="miFormulario">
         <label for="nombre" class="parrafo">¿Cúal es tu nombre?</label>
         <br>
         <br>
@@ -54,7 +54,7 @@
 
     <script>
         // Seleccionar el formulario y los campos
-        const form = document.querySelector(".formulario");
+        const form = document.getElementById("miFormulario");
         const nombre = document.querySelector("input[name='nombre']");
         const correo = document.querySelector("input[name='correo']");
         const contraseña = document.querySelector("input[name='contraseña']");
@@ -88,6 +88,9 @@
             // Evitar el envío si hay errores
             if (!valid) {
                 event.preventDefault();
+            } else {
+                // Acción al enviar el formulario
+                alert("Formulario enviado con éxito");
             }
         });
 
