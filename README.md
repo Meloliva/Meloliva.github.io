@@ -1,7 +1,9 @@
-INFORMACION DEL PROYECTO:
+INFORMACION DEL PROYECTO
+
 VitalCo es una aplicación móvil destinada a personas con niveles altos de triglicéridos, creada para ofrecer un monitoreo integral y guía alimentaria personalizada. La aplicación permite a los usuarios llevar un registro detallado de sus comidas, analizar sus niveles de colesterol y recibir recetas generadas por IA según sus preferencias. VitalCo se sincroniza con dispositivos de salud como relojes inteligentes para medir signos vitales en tiempo real y mejorar la experiencia del usuario. Además, ofrece un foro para interactuar con especialistas y cuenta con una suscripción premium que proporciona acceso a planes personalizados, recetas exclusivas, consejos y consultas en línea con nutricionistas.
 
-AUTORES:
+AUTORES
+
 Allison Naomi Galindo Palomino
 Estudiante de Ingeniería de Sistemas de Información en la UPC. Es responsable y puntual en sus tareas, con habilidades de escucha activa que facilitan la comunicación efectiva y el trabajo en equipo.
 
@@ -18,6 +20,7 @@ Melanie Anai Oliva Cabanillas
 Estudiante de Ingeniería de Sistemas de Información en la UPC. Innovadora, comunicativa y responsable, se enfoca en expresar y recibir ideas del equipo para mejorar el trabajo en conjunto.
 
 SEGMENTO OBJETIVO
+
 VitalCo está diseñada para tres segmentos específicos:
 
 Adultos jóvenes preocupados por su salud cardiovascular
@@ -29,7 +32,8 @@ Adultos que desean un seguimiento más riguroso de su salud. VitalCo permite eva
 Nutricionistas
 Profesionales que emplean la aplicación para hacer seguimiento a pacientes con triglicéridos altos. VitalCo ayuda a estos especialistas a personalizar las dietas, monitorear métricas clave y colaborar con otros profesionales de la salud para mejorar la atención al paciente.
 
-Principales Características
+PRINCIPALES CARACTERISTICAS
+
 VitalCo incorpora varias funcionalidades innovadoras, respaldadas por la integración de IA y sincronización con dispositivos inteligentes:
 
 Perfil de usuario y monitoreo de salud
@@ -48,4 +52,5 @@ Suscripción premium
 La versión premium de VitalCo ofrece planes alimentarios personalizados, recetas exclusivas, consejos avanzados y acceso directo a consultas con nutricionistas en línea.
 
 CONCLUSION
+
 El desarrollo de VitalCo ha sido una experiencia de aprendizaje y crecimiento para todo el equipo, permitiéndonos aplicar conocimientos técnicos y habilidades en la creación de una herramienta útil para el cuidado de la salud. Esta aplicación no solo refleja nuestra dedicación, sino también nuestro compromiso de brindar una solución eficaz y accesible para personas que buscan mejorar su bienestar cardiovascular.
